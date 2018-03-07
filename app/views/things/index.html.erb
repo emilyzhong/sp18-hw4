@@ -1,0 +1,14 @@
+<h3>Cat names</h3>
+<% @cats.each do |cat| %>
+	<div><%= cat.name %></div>
+<% end %>
+
+<h3>User names and ages</h3>
+<% @users.each do |user| %>
+	<div><%= user.username %>, <%= user.age %></div>
+<% end %>
+
+<h3>Todo</h3>
+<% @todos.each do |todo| %>
+	<div><%= todo.task %> is <%= todo.finished ? "done!" : "not done :(" %></div>
+<% end %>
